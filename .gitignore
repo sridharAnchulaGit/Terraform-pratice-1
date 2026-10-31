@@ -1,0 +1,36 @@
+
+# Ignore Terraform working directories in all subfolders
+**/.terraform/
+
+# Ignore Terraform state files
+**/*.tfstate
+**/*.tfstate.*
+**/terraform.tfstate
+**/terraform.tfstate.backup
+
+# Ignore sensitive credentials
+**/*.pem
+**/*.key
+**/*.tfvars
+**/*.tfvars.json
+
+# Ignore Terraform plan and crash files
+**/*.tfplan
+**/*.plan
+**/crash.log
+**/crash.*.log
+
+# Ignore local output
+**/fb-server-ip.txt
+
+# Ignore temporary and cache files
+**/*.tmp
+**/*.bak
+**/__pycache__/
+**/node_modules/
+
+# Ignore editor and OS files
+**/.vscode/
+**/.idea/
+**/.DS_Store
+**/Thumbs.db
