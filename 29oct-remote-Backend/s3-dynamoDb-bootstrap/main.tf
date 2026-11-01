@@ -3,14 +3,14 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terrafrom_state" {
-    bucket = "sridhar-anchula-bucket-2026"
+    bucket = "sridharr-anchulaa-buckets-2026"
     tags = {
       Name="sridhar-anchula-bucket-2026"
     }
 }
 
 resource "aws_s3_bucket_versioning" "terraform_state" {
-    bucket = aws_s3_bucket.terraform_state.id
+    bucket = aws_s3_bucket.terrafrom_state.id
     versioning_configuration {
       status = "Enabled"
     }

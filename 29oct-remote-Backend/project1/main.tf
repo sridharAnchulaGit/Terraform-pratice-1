@@ -11,6 +11,6 @@ resource "aws_instance" "prod_instance" {
     count = 1
     
     tags = {
-        Name="TestServer"
+        Name="ProdServer"
     }
 }
